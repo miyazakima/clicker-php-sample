@@ -9,10 +9,13 @@
     $ git clone https://github.com/IMSGlobal/caliper-php.git
     ~~~
 
-## MySQL データベースの構築
+## mysqli データコネクタの追加
 
-    $ mysql -u <user> -p
-    mysql> CREATE DATABASE clicker CHARACTER SET utf8mb4
+    $ move DataConnector_mysqli.php.addme vendor/imsglobal/lti/src/ToolProvider/DataConnector/
+
+## LTI修正ファイルで上書き
+
+    $ mv OAuthSignatureMethod.php.moveme vendor/imsglobal/lti/src/OAuth/OAuthSignatureMethod.php
 
 ## PhpStorm を用いた環境構築
 

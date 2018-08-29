@@ -11,10 +11,8 @@
 
 ## MySQL データベースの構築
 
-    ~~~
     $ mysql -u <user> -p
     mysql> CREATE DATABASE clicker CHARACTER SET utf8mb4
-    ~~~
 
 ## PhpStorm を用いた環境構築
 
